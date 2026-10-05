@@ -5,11 +5,18 @@ import { appointments } from '../../db/schema.js'
 import { eq, desc } from 'drizzle-orm'
 
 export const DOCTORS = [
-  { specialty: 'Cardiologia', name: 'Dra. Felipe Rocha' },
-  { specialty: 'Dermatologia', name: 'Dr. Felipe Souza' },
+  { specialty: 'Cardiologia', name: 'Dr. Felipe Rocha' },
+  { specialty: 'Cardiologia', name: 'Dr. Emanuel da Silva Junior' },
+  { specialty: 'Cardiologia', name: 'Dra. Fernanda Amaral' },
   { specialty: 'Clínico Geral', name: 'Dra. Marina Alves' },
+  { specialty: 'Clínico Geral', name: 'Dra. Maria de Nobrega' },
+  { specialty: 'Clínico Geral', name: 'Dr. Luiz Flavio Emerenciano' },
   { specialty: 'Pediatria', name: 'Dr. Rafael Lima' },
+  { specialty: 'Pediatria', name: 'Dr. Gustavo Bastos Mioto' },
+  { specialty: 'Pediatria', name: 'Dra. Rafaela de Souza' },
   { specialty: 'Ortopedia', name: 'Dra. Beatriz Nogueira' },
+  { specialty: 'Ortopedia', name: 'Dra. Gabriela Fernandes Carrad' },
+  { specialty: 'Ortopedia', name: 'Dra. Larissa Paes' },
 ]
 
 export const TIME_SLOTS = [
@@ -21,6 +28,8 @@ export const TIME_SLOTS = [
   '15:00',
   '16:00',
   '17:00',
+  '18:30',
+  '19:00',
 ]
 
 const CreateAppointmentSchema = z.object({
