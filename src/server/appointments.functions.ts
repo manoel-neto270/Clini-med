@@ -5,7 +5,7 @@ import { appointments } from '../../db/schema.js'
 import { eq, desc } from 'drizzle-orm'
 
 export const DOCTORS = [
-  { specialty: 'Cardiologia', name: 'Dra. Felipe Rocha', 'Dra. Camila Mendes Souza' },
+  { specialty: 'Cardiologia', name: 'Dra. Felipe Rocha' },
   { specialty: 'Dermatologia', name: 'Dr. Felipe Souza' },
   { specialty: 'Clínico Geral', name: 'Dra. Marina Alves' },
   { specialty: 'Pediatria', name: 'Dr. Rafael Lima' },
